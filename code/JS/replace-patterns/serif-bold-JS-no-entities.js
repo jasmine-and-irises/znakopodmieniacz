@@ -1,10 +1,10 @@
-        document.getElementById("gotowe").addEventListener("click", function (event) {
-            event.preventDefault();
+document.getElementById("gotowe").addEventListener("click", function (event) {
+        event.preventDefault();
 
-            var inputText = document.getElementById("tekst-po-polsku").value;
+        var inputText = document.getElementById("tekst-po-polsku").value;
 
-            // Konkretne znaki i ich zamienniki
-            var replacements = {
+        // Konkretne znaki i ich zamienniki
+        var replacements = {
                 "A": "𝐀",
                 "a": "𝐚",
                 "Ą": "𝐀̨",
@@ -75,15 +75,15 @@
                 "ź": "𝐳́",
                 "Ż": "𝐙̇",
                 "ż": "𝐳̇"
-            };
+        };
     
-            // Zamiana każdego znaku z inputu
-            var outputText = inputText;
-            for (var key in replacements) {
+        // Zamiana każdego znaku z inputu
+        var outputText = inputText;
+        for (var key in replacements) {
                 var regex = new RegExp(key, "g"); // Globalny nowy regex dla klucza
                 outputText = outputText.replace(regex, replacements[key]);
                 }
     
-            // Oto i wynik
-            document.getElementById("wynik").textContent = outputText;
-        });
+        // Oto i wynik
+         document.getElementById("wynik").textContent = outputText;
+});
