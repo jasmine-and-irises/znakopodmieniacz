@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="language" content="pl">
+
+    <meta name="description" content="Strona testowa do nauki HTML i CSS."> 
+    <meta name="keywords" content="fancy fonts, fancy text, zamiana znaków, podmieniacz znaków, zamiana tekstu, zamień tekst, zamień znaki, zamień czcionki, czcionki, fonty, fancy fonts, fancy text generator">
+    <meta name="author" content="Natalia Mika">
+    <meta name="creator" content="hilgardite // jasmine and irises">
+    <meta name="publisher" content="hilgardite // jasmine and irises">
+    <meta name="copyright" content="hilgardite // jasmine and irises">
+    <meta name="application-name" content="Znakopodmieniacz | 𝘧𝘢𝘯𝘤𝘺 𝒻𝑜𝓃𝓉𝓈 𝔡𝔩𝔞 𝕡𝕠𝕝𝕤𝕜𝕚𝕔𝕙 𝐳𝐧𝐚𝐤ó𝐰">
+
+    <!--można crawlować, Internet Archive jest c00l-->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!--będzie sb można motyw zmienić, poza tym stronka mogłaby się dostosowywać do ciemnego motywu-->
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="blue">
+
+    <!--szerowanie w socjalach-->
+    <meta property="og:image" content="C:\Users\natal\OneDrive\Dokumenty\bawię się w net art i web design\szer baner do podmieniacza.png">
+    <meta property="og:description" content="This is an example page to demonstrate usage of metadata on web pages.">
+    <meta property="og:title" content="Znakopodmieniacz | 𝘧𝘢𝘯𝘤𝘺 𝒻𝑜𝓃𝓉𝓈 𝔡𝔩𝔞 𝕡𝕠𝕝𝕤𝕜𝕚𝕔𝕙 𝐳𝐧𝐚𝐤ó𝐰">
+
+    <!--basicowy displej w karcie przeglądarki-->
+    <title>Znakopodmieniacz | 𝘧𝘢𝘯𝘤𝘺 𝒻𝑜𝓃𝓉𝓈 𝔡𝔩𝔞 𝕡𝕠𝕝𝕤𝕜𝕚𝕔𝕙 𝐳𝐧𝐚𝐤ó𝐰</title>
+    <link rel="icon" href="C:\Users\natal\OneDrive\Dokumenty\bawię się w net art i web design\ouzhi.png" />
+
+    <!--fonty z Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&family=Fira+Code:wght@300..700&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Martian+Mono:wght@100..800&family=Readex+Pro:wght@160..700&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Xanh+Mono:ital@0;1&display=swap"
+        rel="stylesheet">
+<style>
+    html, body {
+        font-family: "Hanken Grotesk", HelveticaNeue, sans-serif;
+        font-size: 100%;
+        font-weight: 400;   
+        color: black;
+        padding: 0;
+        margin: 0;
+        }
+    body {
+        background: lavender;
+        font-family: "Hanken Grotesk", sans-serif;
+        font-size: 100%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        background-color: mediumpurple;
+        font-family: "JetBrains Mono", HelveticaNeue, sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 100%;
+        line-height: 1.15em;
+        padding: 1em;
+        margin-top: auto;
+    }
+    header h1 {
+        font-size: 200%;
+        color: white;
+        text-align: center;
+        width: fit-content;
+        line-height: inherit;
+        padding: 0.1em;
+    }
+    header h1:hover {
+        color: blue;
+        background-color: aliceblue;
+        text-decoration-color: blue;
+    }
+    .grupa-z-formem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+        min-width: 800px;
+        margin: auto;
+        margin-bottom: 5em;
+    }
+
+    .grupa-z-formem p.txt-area {
+        margin-bottom: none;
+        padding-bottom: none;
+    }
+
+    label, .grupa-z-formem .p1 {
+        font-weight: 600;
+        font: 110% "Chivo", serif;
+        color: blue;
+    }
+
+    textarea {
+        font-weight: normal;
+        font: 100% "Hanken Grotesk", serif;
+        font-variant: normal;
+        font-variant-emoji: unicode;
+        font-variant-ligatures: no-common-ligatures;
+        font-variant-numeric: tabular-nums;
+        font-optical-sizing: auto;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        white-space: pre-wrap;
+        overflow: auto;
+        hyphens: auto;
+        resize: none;
+        /*sizing*/
+        width: 310px;
+        margin-bottom: 0;
+        padding: 15px;
+        line-height: 1.5;
+        border: 1px solid;
+        border-color: blue;
+    }
+
+    textarea:placeholder-shown {
+        font: 350 blue;
+    }
+
+    textarea.input {
+        display: block;
+        border: 2px solid greenyellow;
+    }
+
+    textarea:focus {
+        padding-top: 13px;
+        padding-bottom: 14px;
+        padding-left: 13px;
+        padding-right: 14px;
+        border: 3px double;
+        border-color: blue;
+        border-radius: 0;
+        outline: none;
+    }
+
+    form.tekst-pole button.confirm-submit {
+        font: 400 95% "Hanken Grotesk";
+        color: white;
+        background: blue;
+        line-height: 1.15;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        margin-top: 0.5em;
+        border: 2px solid blue;
+        transition: 0.4s;
+        outline: none;
+    }
+
+    form.tekst-pole button.confirm-submit:hover {
+        cursor: pointer;
+        color: blue;
+        background: aliceblue;
+        border: 2px solid blue;
+        border-radius: 15em;
+    }
+
+    form.tekst-pole button.confirm-submit:active {
+        color: white;
+        background: mediumpurple;
+        border-color: mediumpurple;
+    }
+
+    ::placeholder {
+        font-weight: 350;
+        color: blue;
+        opacity: 0.8;
+    }
+
+    ::selection {
+        color: black;
+        background: paleturquoise;
+    }
+    .grupa-z-formem .p1 {
+        display: block;
+        text-align: left;
+        justify-content: left;
+        align-content: left;
+        align-items: left;
+        line-height: 1em;
+        margin-left: -7%;
+        margin-bottom: 0;
+        width: fit-content;
+    }
+    .p1:focus {
+        border: 2px solid;
+        border-color: rgb(143, 143, 225);
+    }
+
+    .wynik {
+        display: block;
+        text-align: left;
+        color: black;
+        background-color: white;
+        border: 1px solid blue;
+        /*font settings*/
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: normal;
+        font-size: 100%;
+        line-height: 1.5em;
+        font-variant: normal;
+        font-variant-emoji: unicode;
+        font-variant-ligatures: no-common-ligatures;
+        font-variant-numeric: tabular-nums;
+        font-optical-sizing: auto;
+        /*line and word wrapping, word breaking*/
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        word-break: break-word;
+        white-space: pre-wrap;
+        overflow: auto;
+        /*sizing*/
+        padding: 15px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 15px;
+        width: 310px;
+        max-height: fit-content;
+        min-height: 50px;
+        resize: none;
+        transition: 0.5s;
+    }
+    .wynik:active, .wynik:focus {
+        border: 3px double;
+        border-color: blue;
+        border-radius: 0;
+        outline: none;
+    }
+
+    .wynik .wynik-txt {
+        width: fit-content;
+        height: fit-content;
+        user-select: all;
+        cursor: text;
+    }
+    .wynik-txt:hover {
+        background-color: rgba(5, 5, 243, 0.063);
+        text-decoration-color: blue;
+    }
+    .wynik .wynik-txt::selection {
+        font-weight: normal;
+        color: white;
+        background: plum;
+    }
+    .wynik-txt i {
+        font-style: normal;
+        font-weight: 350;
+        color: blue;
+        opacity: 0.8;
+    }
+     /* STOPKA I JEJ ELEMENTY */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Hanken Grotesk", HelveticaNeue, sans-serif;
+        color: black;
+        font-weight: 400;
+        font-size: 80%;
+        line-height: 1.5em;
+        justify-content: center;
+        padding: 2em;
+        margin-top: auto;
+        background-color: plum;
+    }
+    .cc-lic-p {
+        padding: 0.2em;
+        margin: 0;
+        transition: 0.5s;
+    }
+    .cc-lic-p a {
+        color: blue;
+        text-decoration-line: none;
+    }
+    .cc-lic-p a:hover {
+        color: blue;
+        background-color: rgba(238, 130, 238, 0.31);
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+    }
+    .cc-icon {
+        height: 1.1em !important;
+        width: 1.1em;
+        margin-bottom: 0.1em;
+        padding: none;
+        vertical-align: text-bottom;
+    }
+</style>
+</head>
+
+<body>
+    <header class="nagłówek">
+        <h1 lang="pl" class="nagłówek">Podmieniacz znaków</h1>
+    </header>
+    <div class="grupa-z-formem">
+        <p lang="pl" class="nagłówek"></p>
+        <form method="get" lang="pl" id="tekst-form" class="tekst-pole">
+            <p lang="pl" autofocus>
+                <label for="tekst-po-polsku">Tutaj wpisz tekst, który chcesz zamienić</label><br>
+            </p>
+            <p lang="pl" class="txt-area">
+                <textarea lang="pl"
+                    title="W to pole wprowadź zwykły, niesformatowany tekst, który chcesz zamienić na pogrubiony"
+                    id="tekst-po-polsku" name="Zwykły tekst po polsku" placeholder="Twój tekst…" rows="10" cols="33"
+                    wrap="soft"></textarea><br>
+            <button id="gotowe" title="Kliknik tutaj, gdy skończysz wprowadzać tekst, by zamienić go na pseudosformatowany" 
+                class="confirm-submit" aria-label="Kliknij tutaj, by zamienić tekst na pseudosformatowany">zamień tekst</button></p>
+        </form>
+    <br>
+    <p class="p1" for="wynik" lang="pl">Tutaj pojawi się zamieniony tekst</p><br>
+    <div class="wynik" lang="pl"><span id="wynik-div" lang="pl" class="wynik-txt"><output id="wynik" lang="pl" for="text-form" aria-live="polite" placeholder="Tutaj pojawi się zamieniony tekst. Na razie nic tu nie ma. Nic tu nie ma"><i>Tutaj pojawi się zamieniony tekst. Na razie nic tu nie ma.</i></output></span><br></div>
+    </div>
+    <footer class="footer">
+        <p class="cc-lic-p">&copy; 2025 Natalia Mika | UAM</p>
+        <p xmlns:cc="http://creativecommons.org/ns#" class="cc-lic-p">
+            Ta praca, utworzona przez <span property="cc:attributionName">Natalię Mikę</span>, jest udostępniona na licencji
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;"
+                title="licencja Creative Commons: uznanie autorstwa — użycie niekomercyjne — na tych samych warunkach 4.0 Międzynarodowa"
+                aria-label="licencja Creative Commons: uznanie autorstwa — użycie niekomercyjne — na tych samych warunkach 4.0 Międzynarodowa">
+                CC BY-NC-SA 4.0</a>
+            <img class="cc-icon" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+                alt="logo Creative Commons: dwie litery 'C' obok siebie, otoczone okręgiem" title="Creative Commons"
+                aria-label="Creative Commons">
+            <img class="cc-icon" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+                alt="ikona CC-BY (Attribution): uznanie autorstwa. Schematyczna sylwetka człowieka otoczona okręgiem"
+                title="CC-BY: uznanie autorstwa. Przy udostępnianiu pracy lub jej fragmentów należy podać autora i źródło"
+                aria-label="CC-BY: uznanie autorstwa. Przy udostępnianiu pracy lub jej fragmentów należy podać autora i źródło">
+            <img class="cc-icon" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                alt="ikona CC-NC (NonCommercial): użycie niekomercyjne. Okrąg z przekreślonym symbolem dolara"
+                title="CC-NC: użycie niekomercyjne. Użycie utworu (lub jego fragmentów) dozwolone jest jedynie w celach niekomercyjnych, czyli nieukierunkowanych na korzyści zarobkowe (rekompensatę pieniężną)"
+                aria-label="CC-NC: użycie niekomercyjne. Użycie utworu (lub jego fragmentów) dozwolone jest jedynie w celach niekomercyjnych, czyli nieukierunkowanych na korzyści zarobkowe (rekompensatę pieniężną)">
+            <img class="cc-icon" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+                alt="ikona CC-SA (ShareAlike). Lewoskrętna strzałka, zataczająca okrąg, otoczona okręgiem"
+                title="CC-SA: na takich samych warunkach. Wszelkie adaptacje i wykorzystania pracy muszą być udostępnione na takich samych warunkach, jak te zawarte w licencji pracy. W tym przypadku to oznacza uznanie autorstwa i użycie niekomercyjne"
+                aria-label="CC-SA: na takich samych warunkach. Wszelkie adaptacje i wykorzystania pracy muszą być udostępnione na takich samych warunkach, jak te zawarte w licencji pracy. W tym przypadku to oznacza uznanie autorstwa i użycie niekomercyjne">.
+        </p>
+    </footer>
+    <script>
+        document.getElementById("gotowe").addEventListener("click", function (event) {
+            event.preventDefault();
+
+            var inputText = document.getElementById("tekst-po-polsku").value;
+
+            // Konkretne znaki i ich zamienniki
+            var replacements = {
+                "A": "𝐀",
+                "a": "𝐚",
+                "Ą": "𝐀̨",
+                "ą": "𝐚̨",
+                "B": "𝐁",
+                "b": "𝐛",
+                "C": "𝐂",
+                "c": "𝐜", 
+                "Ć": "𝐂́",
+                "ć": "𝐜́",
+                "D": "𝐃",
+                "d": "𝐝",
+                "E": "𝐄",
+                "e": "𝐞",
+                "Ę": "𝐄̨",
+                "ę": "𝐞̨",
+                "F": "𝐅",
+                "f": "𝐟",
+                "G": "𝐆",
+                "g": "𝐠",
+                "H": "𝐇",
+                "h": "𝐡",
+                "I": "𝐈",
+                "i": "𝐢",
+                "J": "𝐉",
+                "j": "𝐣",
+                "K": "𝐊",
+                "k": "𝐤",
+                "L": "𝐋",
+                "l": "𝐥",
+                "Ł": "𝐋̷",
+                "ł": "𝐥̷",
+                "M": "𝐌",
+                "m": "𝐦",
+                "N": "𝐍",
+                "n": "𝐧",
+                "Ń": "𝐍́",
+                "ń": "𝐧́",
+                "O": "𝐎",
+                "o": "𝐨",
+                "Ó": "𝐎́",
+                "ó": "𝐨́",
+                "P": "𝐏",
+                "p": "𝐩",
+                "Q": "𝐐",
+                "q": "𝐪",
+                "R": "𝐑",
+                "r": "𝐫",
+                "S": "𝐒",
+                "s": "𝐬",
+                "Ś": "𝐒́",
+                "ś": "𝐬́",
+                "T": "𝐓",
+                "t": "𝐭",
+                "U": "𝐔",
+                "u": "𝐮",
+                "V": "𝐕",
+                "v": "𝐯",
+                "W": "𝐖",
+                "w": "𝐰",
+                "X": "𝐗",
+                "x": "𝐱",
+                "Y": "𝐘",
+                "y": "𝐲",
+                "Z": "𝐙",
+                "z": "𝐳",
+                "Ź": "𝐙́",
+                "ź": "𝐳́",
+                "Ż": "𝐙̇",
+                "ż": "𝐳̇"
+            };
+    
+            // Zamiana każdego znaku z inputu
+            var outputText = inputText;
+            for (var key in replacements) {
+                var regex = new RegExp(key, "g"); // Globalny nowy regex dla klucza
+                outputText = outputText.replace(regex, replacements[key]);
+                }
+    
+            // Oto i wynik
+            document.getElementById("wynik").textContent = outputText;
+        });
+    </script>
+</body>
+</html>
