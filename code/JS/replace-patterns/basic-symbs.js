@@ -3,12 +3,12 @@ document.getElementById("gotowe").addEventListener("click", function (event) {
 
 	var inputText = document.getElementById("tekst-po-polsku").value;
 	var replacements = {
-		"...":"&mldr;"
-		",,":"&bdquo;"
-		"''":"&#8221;"
-		"<<":"&laquo;"
-		">>":"&raquo;"
-		"--":"&mdash;"
+		"...":"&mldr;",
+		",,":"&bdquo;",
+		"''":"&#8221;",
+		"<<":"&laquo;",
+		">>":"&raquo;",
+		"--":"&mdash;",
             };
     
             var outputText = inputText;
@@ -17,5 +17,5 @@ document.getElementById("gotowe").addEventListener("click", function (event) {
                 outputText = outputText.replace(regex, replacements[key]);
                 }
     
-            document.getElementById("wynik").textContent = outputText;
+            document.getElementById("wynik").innerHTML = outputText;
 });
